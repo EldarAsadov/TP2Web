@@ -10,20 +10,16 @@
     <script src="javascript/apocalypse.js"></script>
     <h1>Apocalypse</h1>
 
-<p>Image to use:</p>
-
-<img id="scream" width="220" height="277" src="pic_the_scream.jpg" alt="The Scream">
-
-<p>Canvas:</p>
+<img id="boom" src="../TP2Web/img/image 2.png">
 
 <canvas id="myCanvas" width="240" height="297" style="border:1px solid grey;"></canvas>
 
 <script>
 window.onload = function() {
-  const canvas = document.getElementById("myCanvas");
+  const canvas = document.getElementById("boom");
   const ctx = canvas.getContext("2d");
-  const img = document.getElementById("scream");
-  ctx.drawImage(img, 10, 10);
+  const img = document.getElementById("boom");
+  ctx.drawImage(img, 100, 100);
 };
 </script>
 
