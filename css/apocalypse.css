@@ -1,4 +1,19 @@
 #boom {
-    width: auto;
-    height: auto;
+
+    border-radius: 6px;
+    background-image: url('../img/Bombe.png');
+    background-repeat: no-repeat ;
+    background-position:top;
+    background-size: 100% 310%;
+   
+}
+
+#Titre {
+    color: white;
+    position:relative;
+    font-size: 1000%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+
 }
