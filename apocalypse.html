@@ -1,16 +1,38 @@
-<!DOCTYPE html >
-<html id="boom"lang="fr-ca">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Apocalypse</title>
+    <title>Apocalypse</title>
+    <!-- Include Supabase JavaScript SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <link rel="stylesheet" href="css/apocalypse.css">
-
-</head>
-<body > 
+    <!-- Include your own CSS file -->
+    <link rel="stylesheet" href="./css/apocalypse.css">
     <script src="javascript/apocalypse.js"></script>
-    <h1 id="Titre">Apocalypse</h1>
+</head>
+<body>
+    <header>
+        <h1>Apocalypse</h1>
+    </header>
 
+    <main>
+        <section id="game-container">
+            <img id="scene-image" src="" alt="Scene Image">
+            <p id="scene-text">Scene Text Here</p>
+            <div id="choices">
+                <button id="choice-1-button">Choix 1</button>
+                <button id="choice-2-button">Choix 2</button>
+                <button id="choice-3-button">Choix 3</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 Apocalypse. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+    </script>
 </body>
 </html>
