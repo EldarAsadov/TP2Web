@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +15,13 @@
         <h1>Apocalypse</h1>
     </header>
 
+    <audio id="AudioPrincipal" controls loop>
+        <source src="audio/MusiqueDambiance.mp3" type="audio/mp3">
+      </audio>
+
     <main>
         <section id="game-container">
-            <img id="scene-image" src="" alt="Scene Image">
+            <img id="scene-image" src="img/Img_intro.png" alt="Scene Image">
             <p id="scene-text">Scene Text Here</p>
             <div id="choices">
                 <button id="choice-1-button">Choix 1</button>
@@ -27,8 +31,39 @@
         </section>
     </main>
 
+
+
+     <!-- faire jouer un audio quand on click sur un boutton-->
+    <button id="playButton">Boutton mort</button>
+    <audio id="audio">
+        <!-- Ajoutez le chemin du fichier audio dans l'attribut src -->
+        <source src="audio/PoliceGyrophare.mp3" type="audio/mp3">
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+      
+      <script>
+        //audio qui joue au tout début.
+         var audioEmbiance = document.getElementById('AudioPrincipal');
+         document.addEventListener('click', function() {
+        // Jouez le son
+        audioEmbiance.play();
+  });
+
+
+
+        // Obtenez la référence de l'élément audio et du bouton
+        var audio = document.getElementById('audio');
+        var playButton = document.getElementById('playButton');
+      
+        // Associez une fonction au clic sur le bouton
+        playButton.addEventListener('click', function() {
+          // Jouez le son
+          audio.play();
+        });
+      </script>
+
     <footer>
-        <p>Copyright © 2023 Apocalypse. All rights reserved.</p>
+        <p>Copyright © 2023 Apocalypse. All rights reserved. Audio from Pixabay and images from Pexels.</p>
     </footer>
 
     <script>
