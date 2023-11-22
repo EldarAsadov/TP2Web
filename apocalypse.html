@@ -34,12 +34,15 @@
 
 
      <!-- faire jouer un audio quand on click sur un boutton-->
-    <button id="playButton">Boutton mort</button>
+
     <audio id="audio">
         <!-- Ajoutez le chemin du fichier audio dans l'attribut src -->
         <source src="audio/PoliceGyrophare.mp3" type="audio/mp3">
         Votre navigateur ne supporte pas l'élément audio.
       </audio>
+      
+
+
       
       <script>
         //audio qui joue au tout début.
@@ -53,9 +56,9 @@
 
         // Obtenez la référence de l'élément audio et du bouton
         var audio = document.getElementById('audio');
-        var playButton = document.getElementById('playButton');
+        var playButton = document.getElementById('choice-2-button');
       
-        // Associez une fonction au clic sur le bouton
+        // une fonction est associez au clic du bouton
         playButton.addEventListener('click', function() {
           // Jouez le son
           audio.play();
